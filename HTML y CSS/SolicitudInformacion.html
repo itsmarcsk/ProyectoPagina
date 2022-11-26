@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SOFTDEV</h1>
+    <form>
+        <p>Nombre
+            <input id="textoNombre" type="text" id="fname" name="fname"></p>
+        <br>
+        <br>
+        <p>Apellidos
+            <input id="textoApellido" type="text" id="fsurname" name="fsurname">
+        </p> 
+        <br>
+        <br>
+        <p>
+            Fecha de nacimiento:
+            <input id="campoCumple" type="date" id="birthday" name="birthday">
+        </p>
+        <p>Enviar CV 
+            <input id="campoCV" type="file" name="cv" accept=".pdf, doc, docx ">
+        </p>
+        <p>
+            Cuéntenos un poco las dudas que tenga:
+        </p>
+        <textarea id="campoTextoSugerencias" name="message" rows="10" cols="40">
+        </textarea>
+        <p>
+            Puesto de trabajo de interés:
+            <select id="puestoTrabajo">
+                <option value="softwarearchitect">Aquitecto de software</option>
+                <option value="backdev">Backend developer</option>
+                <option value="frontdev">Frontend developer</option>
+                <option value="softwareengineer">Ingeniero de software</option>
+            </select>
+        </p>
+        <p>
+            <input id="btnAcceptarTerminos" type="checkbox" id="checkbutton1" name="checkbutton" value="Accept">Acepta los <b>términos de uso</b>
+        </p>
+        <input id="btnReset" type="reset" value="Eliminar datos">
+        <input id="btnEnviar" type="submit" value="Enviar datos" href="softdev@gmail.es">
+    </form>
+</body>
+</html>
