@@ -3,24 +3,18 @@
 		color: rgb(255, 255, 255);
 	}
 	form{
-		margin-top: 100px;
+		margin-top: 150px;
 			
 	}
-	textarea,select,option,input {
+	textarea,select,option,input, #btnEnviar, #btnReset{
 		font-family: Arial;
 	}
-	#btnReset{
-		font-family: Arial;
-	}
-	#btnEnviar{
-		font-family: Arial;
-	}
+	
 	h1{
 		color:white;
 	}
 	*{
-		margin: 0;
-		padding: 0;
+		
 		box-sizing: border-box;
 		font-family: 'Montserrat Alternates', sans-serif;
 	}
@@ -59,6 +53,8 @@
 		cursor: pointer;
 	}
 	.logo h1{
+		margin: 0;
+		padding: 0;
 		color: #fff;
 		font-weight: 400;
 		font-size: 22px;
