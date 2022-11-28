@@ -10,11 +10,8 @@
 		font-family: Arial;
 	}
 	
-	h1{
-		color:white;
-	}
+	
 	*{
-		
 		box-sizing: border-box;
 		font-family: 'Montserrat Alternates', sans-serif;
 	}
@@ -52,13 +49,14 @@
 		font-size: 25px;
 		cursor: pointer;
 	}
-	.logo h1{
+	.logo a{
 		margin: 0;
 		padding: 0;
 		color: #fff;
 		font-weight: 400;
 		font-size: 22px;
 		margin-left: 10px;
+		text-decoration:none;
 	}
 	.container .menu{
 		float: right;
