@@ -15,6 +15,26 @@
 		margin-top: 5px;
 		margin-left: 15px;
 	}
+	.Servicios h2{
+		font-weight: 400;
+		font-size: 35px;
+		margin-left: 10px;
+	}
+	
+	.Servicios {
+		color: white;
+		margin-top: 150px;
+	}
+	.Servicios #servi{
+		margin-left: 10px;
+	}
+	.Productos h2{
+		color: white;
+		font-weight: 400;
+		font-size: 35px;
+		margin-left: 10px;
+		margin-top: 100px;
+	}
 	.pack{
 		color: white;
 		font-size: 30px;
@@ -29,6 +49,13 @@
 		z-index: -1;
 		top: 0;left: 0;
 	}
+	.contactar{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-color: #0058dc14;
+		color: white;
+
+	}
 	/*Estilos para el encabezado*/
 	.header{
 		width: 100%;
@@ -42,6 +69,7 @@
 		margin: auto;
 	}
 	.container .btn-menu, .logo{
+		
 		float: left;
 		line-height:100px;
 	}
