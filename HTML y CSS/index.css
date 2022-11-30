@@ -7,7 +7,7 @@
 	body{
 		background: url(https://www.xtrafondos.com/wallpapers/resized/universo-espacio-interestelar-2898.jpg?s=large);
 		background-size: 100vw 100vh;
-		background-repeat: no-repeat;
+		background-repeat:repeat;
 	}
 	.capa{
 		position: fixed;
@@ -16,6 +16,26 @@
 		background: rgba(0,0,0,0.6);
 		z-index: -1;
 		top: 0;left: 0;
+	}
+	.contactar{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-color: #0058dc14;
+		color: white;
+		
+	}
+	.icon{
+		float: left;
+		background-color: white;
+		width: 30px;
+		margin-top: 5px;
+		margin-left: 15px;
+	}
+	.presentacion{
+		color: white;
+	}
+	#pres, .contactar p{
+		font-family: Arial, Helvetica, sans-serif;
 	}
 	/*Estilos para el encabezado*/
 	.header{
@@ -147,5 +167,82 @@
 			width:63px;
 			height:63px;
 			line-height: 66px;
+		}
+	}
+	.slider{
+		width: 100%;
+		height: 600px;
+		overflow: hidden;
+		
+	}
+	.slider ul{
+		
+		display: flex;
+		animation: cambio 20s infinite alternate linear;
+		width: 400%;
+	}
+	.slider li{
+		
+		width: 100%;
+		list-style: none;
+	}
+	.slider img{
+		background: scroll;
+		width: 100%;
+		height: 100%;
+	}
+	@keyframes cambio{
+		0%{margin-left: 0;}
+		20%{margin-left: 0;}
+		  
+		25%{margin-left: -100%;}
+		45%{margin-left: -100%;}
+		  
+		50%{margin-left: -200%;}
+		70%{margin-left: -200%;}
+		  
+		75%{margin-left: -300%;}
+	    100%{margin-left: -300%;}
+	}
+	@media only screen and (min-width:320px) and (max-width:768px){
+	  .slider, .slider ul, .slider img{
+	  height: 100vh;
+	}
+	}
+	.slider{
+		margin-top: 50px;
+		width: 100%;
+		height: 600px;
+		overflow: hidden;
+	}
+	.slider ul{
+		display: flex;
+		animation: cambio 20s infinite alternate linear;
+		width: 400%;
+	}
+	.slider li{
+		width: 100%;
+		list-style: none;
+	}
+	.slider img{
+		width: 100%;
+		height: 100%;
+	}
+	@keyframes cambio{
+		0%{margin-left: 0;}
+		20%{margin-left: 0;}
+		  
+		25%{margin-left: -100%;}
+		45%{margin-left: -100%;}
+		  
+		50%{margin-left: -200%;}
+		70%{margin-left: -200%;}
+		  
+		75%{margin-left: -300%;}
+		100%{margin-left: -300%;}
+	}
+	@media only screen and (min-width:320px) and (max-width:768px){
+	.slider, .slider ul, .slider img{
+		height: 100vh;
 		}
 	}

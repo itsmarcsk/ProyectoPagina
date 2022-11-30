@@ -4,16 +4,28 @@
 	}
 	form{
 		margin-top: 100px;
-			
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		background-color: #0058dc14;		
+	}
+	#campoCumple,#textoNombre,#textoApellido,#campoCV,#campoTextoSugerencias{
+		background-color: #0c5dd647;
+		color: white;
+	}
+	#puestoTrabajo{
+		color:white;
+		background-color: #01348099;
 	}
 	textarea,select,option,input{
 		font-family: Arial;
+		margin-left: 10px;
 	}
 	#btnReset{
 		margin-right: 10px;
 	}
-	#btnEnviar, #btnReset{
-		
+	#btnEnviar, #btnReset{	
 		min-width: 130px;
 		height: 40px;
 		color: #fff;
@@ -25,12 +37,12 @@
 		display: inline-block;
 		outline: none;
 		border-radius: 20px;
-		border: 2px solid #4433ff;
-		background: #4433ff;	  
+		border: 2px solid #0059ff;
+		background: #0059ff;	  
 	}
 	#btnReset:hover, #btnEnviar:hover{
 		background: #fff;
-		color: #4433ff;
+		color: #0059ff;
 	}
 	#btnAcceptarTerminos{		
 			color: #fff;
@@ -127,7 +139,6 @@
 		padding-bottom: 5px;
 	}
 	/*Fin de Estilos para el encabezado*/
-
 	/*Menù lateral*/
 	#btn-menu{
 		display: none;

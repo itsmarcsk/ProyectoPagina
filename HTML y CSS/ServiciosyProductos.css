@@ -56,6 +56,9 @@
 		color: white;
 
 	}
+	.contactar p{
+		font-family: Arial, Helvetica, sans-serif;
+	}
 	/*Estilos para el encabezado*/
 	.header{
 		width: 100%;
