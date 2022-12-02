@@ -53,6 +53,21 @@
 		text-shadow: 3px 3px rgb(173, 172, 172);
 		margin-top: 30px;
 	}
+	#cambioIdioma{
+		margin-left: 50px;
+		border-color: #3498db;
+		color: white;
+		padding: 4px;
+		box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+		-webkit-transition: all 150ms ease-in-out;
+		transition: all 150ms ease-in-out;
+		text-decoration: none;
+		  
+	}
+	#cambioIdioma:hover {
+		color: white;
+		box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+	}
 	/*Estilos para el encabezado*/
 	.header{
 		width: 100%;
@@ -74,13 +89,14 @@
 		font-size: 25px;
 		cursor: pointer;
 	}
-	.logo h1{
+	.logo a{
 		margin: 0;
 		padding: 0;
 		color: #fff;
 		font-weight: 400;
 		font-size: 22px;
 		margin-left: 10px;
+		text-decoration: none;
 	}
 	.container .menu{
 		float: right;

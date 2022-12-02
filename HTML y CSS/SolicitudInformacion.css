@@ -89,6 +89,20 @@
 		z-index: -1;
 		top: 0;left: 0;
 	}
+	#cambioIdioma{
+		margin-left: 50px;
+		border-color: #3498db;
+		color: white;
+		padding: 4px;
+		box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+		-webkit-transition: all 150ms ease-in-out;
+		transition: all 150ms ease-in-out;
+		text-decoration: none;
+	}
+	#cambioIdioma:hover {
+		color: rgb(118, 118, 118);
+		box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+	}
 	/*Estilos para el encabezado*/
 	.header{
 		width: 100%;
