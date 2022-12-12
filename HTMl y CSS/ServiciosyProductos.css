@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background: url(https://www.xtrafondos.com/wallpapers/resized/universo-espacio-interestelar-2898.jpg?s=large);
+		background-size: 100vw 100vh;
+		background-repeat:repeat;
+	}
+	.icono{
+		float: left;
+		background-color: white;
+		width: 30px;
+		margin-top: 5px;
+		margin-left: 15px;
+	}
+	.Servicios h2{
+		font-weight: 400;
+		font-size: 35px;
+		margin-left: 10px;
+	}
+	
+	.Servicios {
+		color: white;
+		margin-top: 150px;
+	}
+	.Servicios #servi td{
+		margin: 40px;
+	}
+	.Productos h2{
+		color: white;
+		font-weight: 400;
+		font-size: 35px;
+		margin-left: 10px;
+		margin-top: 100px;
+	}
+	.pack{
+		color: white;
+		font-size: 30px;
+		margin-left: 60px;
+		margin-bottom: 30px;
+	}
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	.contactar{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-color: #0058dc14;
+		color: white;
+
+	}
+	.contactar p{
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	#cambioIdioma{
+		margin-left: 50px;
+		border-color: #3498db;
+		color: white;
+		padding: 4px;
+		box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+		-webkit-transition: all 150ms ease-in-out;
+		transition: all 150ms ease-in-out;
+		text-decoration: none; 
+	}
+	#cambioIdioma:hover {
+		color: rgb(118, 118, 118);
+		box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	
+	.logo a{
+		margin: 0;
+		padding: 0;
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+		text-decoration:none;
+	}
+	.logo a:active {
+		background-color: rgb(109, 109, 109);
+	}
+	
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.submenuPortafolio{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+		
+	.contenedor{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+	.contenedor figure{
+	   position:relative;
+		height: 250px;
+		cursor: pointer;
+		width: 350px;
+		overflow: hidden;
+		border-radius: 6px;	
+		box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	}
+	.contenedor figure img{
+		width: 100%;
+		height: 100%;
+		transition: all 400ms ease-out;
+		will-change: transform;
+	}
+	.contenedor figure .TheEconomist,.contenedor figure .Money, .contenedor figure .JSun, .contenedor figure .PySun,.contenedor figure .CSun,.contenedor figure .ArchitecturePlaneD,.contenedor figure .InsideD, .contenedor figure .MaterialsSearcher, .contenedor figure .EstateSearcher{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,103,123,0.7);
+		transition: all 400ms ease-out;
+		opacity: 0;
+		visibility: hidden;
+	   	text-align: center;
+	}
+	.contenedor figure:hover > .TheEconomist,.contenedor figure:hover > .Money,.contenedor figure:hover > .JSun, .contenedor figure:hover > .PySun,.contenedor figure:hover > .CSun, .contenedor figure:hover > .ArchitecturePlaneD,.contenedor figure:hover > .InsideD,.contenedor figure:hover > .MaterialsSearcher, .contenedor figure:hover > .EstateSearcher {
+		opacity: 1;
+		visibility: visible;
+	}
+	.contenedor figure:hover > .TheEconomist h2,.contenedor figure:hover > .Money h2, .contenedor figure:hover > .JSun h2,.contenedor figure:hover > .PySun h2, .contenedor figure:hover > .CSun h2, .contenedor figure:hover > .ArchitecturePlaneD h2,.contenedor figure:hover > .InsideD h2,.contenedor figure:hover > .MaterialsSearcher h2, .contenedor figure:hover > .EstateSearcher h2{
+		margin-top: 30px;
+		margin-bottom: 15px;
+	}
+	.contenedor figure:hover > img{
+		transform: scale(1.3);
+	}
+	.contenedor figure .TheEconomist h2, .contenedor figure .Money h2, .contenedor figure .JSun h2,.contenedor figure .PySun h2,.contenedor figure .CSun h2, .contenedor figure .ArchitecturePlaneD h2, .contenedor figure .InsideD h2, .contenedor figure .MaterialsSearcher h2, .contenedor figure .EstateSearcher h2{
+		color: #fff;
+		font-weight: 400;
+		margin-bottom: 120px;
+		transition: all 400ms ease-out;
+		margin-top: 30px;
+	}
+	.contenedor figure .TheEconomist p,.contenedor figure .Money p, .contenedor figure .JSun p,.contenedor figure .PySun p,.contenedor figure .CSun p,.contenedor figure .ArchitecturePlaneD p, .contenedor figure .InsideD p, .contenedor figure .MaterialsSearcher p, .contenedor figure .EstateSearcher p{
+		color: #fff;
+		font-size: 15px;
+		line-height: 1.5;
+		width: 100%;
+		max-width: 220px;
+		margin: auto;
+	}

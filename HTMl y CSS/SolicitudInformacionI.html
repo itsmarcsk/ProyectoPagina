@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de información</title>
+    <link rel="stylesheet" href="SolicitudInformacion.css">
+</head>
+<body>
+    <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<a href="../HTMl y CSS/indexI.html">SOFTDEV</a>
+			</div>
+			<nav class="menu">
+				<a href="../HTML y CSS/indexI.html">Start</a>
+				<a href="#">Us</a>
+                <a href="../HTML y CSS/ServiciosyProductosI.html">Services and Products</a>
+				<a href="../HTMl y CSS/ContactosI.html">Contact</a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+<!--Menu lateral--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+		    <a href="../HTMl y CSS/indexI.html">Home</a>
+            <a href="../HTML y CSS/ServiciosyProductosI.html">Services y Products</a>
+		    <a href="../HTMl y CSS/QuienesSomosI.html">Our team</a>
+		    <a href="../HTML y CSS/SolicitudInformacionI.html">Information requests</a>
+		    <a href="../HTMl y CSS/ContactosI.html">Contact</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+<form action="/action_page.php">
+    <center>
+        <p>Name
+            <input id="textoNombre" type="text"  name="fname"></p>
+        <p>Surname
+            <input id="textoApellido" type="text"  name="fsurname">
+        </p> 
+        <p>
+            Birthday:
+            <input id="campoCumple" type="date"  name="birthday">
+        </p>
+        <p>Send CV 
+            <input id="campoCV" type="file" name="cv" accept=".pdf, doc, docx ">
+        </p>
+        <p>
+            Tell us a little about the doubts you have:
+        </p>
+        <textarea id="campoTextoSugerencias" name="message" rows="10" cols="40">
+        </textarea>
+        <p>
+            Job position of interest:
+            <select id="puestoTrabajo">
+                <option value="softwarearchitect">Software architect</option>
+                <option value="backdev">Backend developer</option>
+                <option value="frontdev">Frontend developer</option>
+                <option value="softwareengineer">Software engineer</option>
+            </select>
+        </p>
+        <p>
+            <input id="btnAcceptarTerminos" type="checkbox" id="checkbutton1" name="checkbutton" value="Accept">I accept the <b>terms of use</b>
+        </p>
+        <input id="btnReset" type="reset" value="Delete data" >
+        <input id="btnEnviar" type="submit" value="Sent data" href="softdev@gmail.es">
+    </center>
+</form>
+<a  id="cambioIdioma" href="../HTMl y CSS/SolicitudInformacion.html">Change language</a>
+</body>
+</html>
